@@ -1,0 +1,26 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/nav_history"
+        android:icon="@drawable/history_icon"
+        app:showAsAction="always"
+        android:title="历史" />
+
+    <item
+        android:id="@+id/nav_chat"
+        android:icon="@drawable/chat_icon"
+        app:showAsAction="always"
+        android:title="对话" />
+
+    <item
+        android:id="@+id/nav_tool"
+        android:icon="@drawable/user_icon"
+        app:showAsAction="always"
+        android:title="个人" />
+
+    <item
+        android:id="@+id/nav_image"
+        android:icon="@drawable/image_icon"
+        app:showAsAction="always"
+        android:title="设置" />
+</menu>

@@ -76,6 +76,7 @@ public class ToolFragment extends Fragment {
             MyResponse res = ViewModelHolder.getInstance().getLoginViewModel().updateUserSettings(defaultModel.getSelectedItem().toString(), defaultSystem.getText().toString());
             if(res.getStatus().equals("success")) {
                 ViewModelHolder.getInstance().getLoginViewModel().getUser().getValue().setDefaultModel(defaultModel.getSelectedItem().toString());
+                ViewModelHolder.getInstance().getLoginViewModel().getUser().getValue().setDefaultPrompt(defaultSystem.getText().toString());
                 Toast.makeText(getContext(), "更新成功", Toast.LENGTH_SHORT).show();
             } else {
                 Toast.makeText(getContext(), res.getMessage(), Toast.LENGTH_SHORT).show();

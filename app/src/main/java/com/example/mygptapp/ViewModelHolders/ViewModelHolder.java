@@ -70,8 +70,4 @@ public class ViewModelHolder implements ViewModelStoreOwner {
         }
         return messageViewModel;
     }
-
-    public void getAllChatList(Context context) throws InterruptedException {
-        getChatViewModel().getAllChatInfo(context);
-    }
 }

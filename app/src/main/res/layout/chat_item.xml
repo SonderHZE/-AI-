@@ -40,9 +40,6 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="@+id/chat_title" />
 
-<!--    操作按钮-->
-
-    <!--    分割线，增加视觉区分度 -->
 
     <View
         android:layout_width="match_parent"

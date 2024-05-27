@@ -34,6 +34,7 @@ public class MainActivity extends AppCompatActivity {
             intent = new Intent(this, ChatActivity.class);
         }
         startActivity(intent);
-
+        // 关闭当前Activity
+        ActivityCompat.finishAffinity(this);
     }
 }

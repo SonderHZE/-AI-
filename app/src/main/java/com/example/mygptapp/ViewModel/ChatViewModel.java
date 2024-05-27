@@ -88,41 +88,6 @@ public class ChatViewModel extends ViewModel {
         t.join();
     }
 
-//    function sendImageQuestion() {
-//    if (ifRunning.value) {
-//        ElMessage({
-//            message: '正在生成，请稍后',
-//            type: 'warning'
-//        })
-//    }
-//
-//    // 禁止输入框输入
-//    ifRunning.value = true
-//
-//    axios.post("http://47.99.133.237:8080/imageCreation", {
-//        prompt: inputText.value,
-//        size: "1024*1024",
-//        n: 1
-//    }, {
-//        withCredentials: true,
-//        headers: {
-//            'Content-Type': 'application/x-www-form-urlencoded'
-//        }
-//    }).then(res => {
-//        if (res.data.status === 'success') {
-//            outputImageUrl.value = res.data.data
-//            ifRunning.value = false
-//        } else {
-//            ElMessage({
-//                message: res.data.message,
-//                type: 'error'
-//            })
-//            ifRunning.value = false
-//        }
-//    }).catch(err => {
-//        console.log(err)
-//    })
-//}
     public void sendImageMessage(String prompt, Context context, okhttp3.Callback callback) {
         AppDatabase db = Room.databaseBuilder(context, AppDatabase.class, "user").build();
         Thread t = new Thread(() -> {
